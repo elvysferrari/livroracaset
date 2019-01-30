@@ -1,7 +1,7 @@
 <ActionBar class="action-bar">
     <NavigationButton android.systemIcon="ic_menu_back" (tap)="onBackButtonTap()">
     </NavigationButton>
-    <Label class="action-bar-title" [text]="race.name" horizontalAlignment="center"></Label>
+    <Label class="action-bar-title" [text]="race.nome" horizontalAlignment="center"></Label>
     <!-- <ActionItem ios.position="right" android.position="right" (tap)="onEditButtonTap()">
         <Label text="Edit" class="action-item"></Label>
     </ActionItem> -->
@@ -9,37 +9,45 @@
 
 <GridLayout class="page page-content">
     <ScrollView>
-        <GridLayout rows="auto, auto, auto">
-            <Image [src]="race.imageUrl" stretch="aspectFill" height="200" class="m-b-15"></Image>
+        <GridLayout rows="auto, auto, auto, auto">
+            <Image [src]="race.imageUrl" height="200" class="m-b-15"></Image>
 
             <StackLayout row="1" class="hr-light m-t-15 m-b-15"></StackLayout>
 
             <GridLayout row="2" rows="*,*,*,*,*,*" columns="auto, auto">
 
-                <Label text="Price" class="p-l-15 p-b-10 m-r-20 text-secondary"></Label>
-                <Label col="1" class="text p-b-10">
-                    <FormattedString>
-                        <Span text="&euro;"></Span>
-                        <Span [text]="race.price"></Span>
-                        <Span text="/day"></Span>
+                <Label class="p-l-15 p-b-10 m-r-20">
+                    <FormattedString ios:fontFamily="system">
+                        <Span text="&#xf006;   " style="color:rgb(201, 201, 65)" class="fa"></Span>
+                        <Span text="Origem: "></Span>
+                        <Span [text]="race.constelacao ? race.constelacao : 'N/A'"></Span>
                     </FormattedString>
                 </Label>
 
-                <Label text="Class" class="p-l-15 p-b-10 m-r-20 text-secondary" row="1"></Label>
-                <Label [text]="race.class" row="1" col="1" class="text p-b-10"></Label>
-
-                <Label text="Doors" class="p-l-15 p-b-10 m-r-20 text-secondary" row="2"></Label>
-                <Label [text]="race.doors" row="2" col="1" class="text p-b-10"></Label>
-
-                <Label text="Seats" class="p-l-15 p-b-10 m-r-20 text-secondary" row="3"></Label>
-                <Label [text]="race.seats" row="3" col="1" class="text p-b-10"></Label>
-
-                <Label text="Transmission" class="p-l-15 m-r-20 p-b-10 text-secondary" row="4"></Label>
-                <Label [text]="race.transmission" row="4" col="1" class="text p-b-10"></Label>
-
-                <Label text="Luggage" class="p-l-15 p-b-10 m-r-20 text-secondary" row="5"></Label>
-                <Label [text]="race.luggage" row="5" col="1" class="text p-b-10"></Label>
-            </GridLayout>
+                <Label row="1" class="p-l-15 p-b-10 m-r-20">
+                    <FormattedString ios:fontFamily="system">
+                        <Span text="&#xf1da;   " style="color:rgb(99, 99, 95)" class="fa"></Span>
+                        <Span text="1º Visita: "></Span>
+                        <Span [text]="race.primeiraVisita ? race.primeiraVisita : 'N/A'"></Span>
+                    </FormattedString>
+                </Label>
+                <Label row="2" class="p-l-15 p-b-10 m-r-20">
+                    <FormattedString ios:fontFamily="system">
+                        <!-- <Span [text]="race.pacifica ? '&#xf118;   ' : '&#xf119;   '" [ngStyle]="{color: race.pacifica ? '#1c7426' : '#b70431'}"
+                            class="fa"></Span> -->
+                        <Span [text]="race.pacifica == true ? '&#xf118;   ' : (race.pacifica == false ? '&#xf119;   ' : '&#xf11a;   ')" 
+                            [ngStyle]="{color: race.pacifica == true ? '#1c7426' : (race.pacifica == false ? '#b70431' : '#ff7a00')}"
+                            class="fa"></Span>                            
+                        <Span text="Pacífica: "></Span>
+                        <Span [text]="race.pacifica == true ? 'Sim' : (race.pacifica == false ? 'Não' : 'N/A')"></Span>
+                    </FormattedString>
+                </Label>                                                    
+            </GridLayout>    
+            <ScrollView row="3">
+                <Label class="p-l-15 p-b-10 m-r-20" textWrap="true" textAlignment="left" [text]="race.descricao"></Label>   
+            </ScrollView> 
+                                                            
         </GridLayout>
+                              
     </ScrollView>
 </GridLayout>

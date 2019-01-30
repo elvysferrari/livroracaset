@@ -1,7 +1,7 @@
 // Import the theme’s variables. If you’re using a color scheme
 // other than “light”, switch the path to the alternative scheme,
 // for example '~nativescript-theme-core/scss/dark'.
-@import '~nativescript-theme-core/scss/light';
+@import '~nativescript-theme-core/scss/forest';
 
 // Custom colors
 $background-dark: #F8F8F8 !default;
@@ -15,6 +15,8 @@ $blue-10: rgba($blue-dark, 0.1) !default;
 
 $accent-dark: #3A53FF !default;
 $accent-light: #4781FE !default;
+
+$forest: #4ea24e !default;
 
 $success-dark: #06CE6A !default;
 $success-light: #00E676 !default;
@@ -47,7 +49,7 @@ $background: #fff;
 $primary: lighten(#000, 13%);
 $secondary: lighten(#000, 46%);
 $disabled: lighten(#000, 62%);
-$accent: $accent-dark;
+$accent: $forest;
 $error: $error-light;
 
 // SideDrawer

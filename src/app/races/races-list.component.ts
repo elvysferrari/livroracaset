@@ -12,43 +12,25 @@ import { RaceService } from "./shared/race.service";
 * It also handles the navigation to the details page for each item.
 *************************************************************/
 @Component({
-    selector: "CarsList",
+    selector: "RacesList",
     moduleId: module.id,
     templateUrl: "./races-list.component.html",
     styleUrls: ["./race-list.component.scss"]
 })
 export class RaceListComponent implements OnInit {
     private _isLoading: boolean = false;
-    private _races: ObservableArray<Race> = new ObservableArray<Race>([]);
+    private _races: Race[] = [];
 
     constructor(
         private _raceService: RaceService,
         private _routerExtensions: RouterExtensions
     ) { }
 
-    /* ***********************************************************
-    * Use the "ngOnInit" handler to get the data and assign it to the
-    * private property that holds it inside the component.
-    *************************************************************/
     ngOnInit(): void {
-        this._isLoading = true;
-
-        /* ***********************************************************
-        * The data is retrieved remotely from FireBase.
-        * The actual data retrieval code is wrapped in a data service.
-        * Check out the service in cars/shared/car.service.ts
-        *************************************************************/
-        /* this._raceService.load()
-            .then((cars: Array<Car>) => {
-                this._cars = new ObservableArray(cars);
-                this._isLoading = false;
-            })
-            .catch(() => {
-                this._isLoading = false;
-            }); */
+        this._races = this._raceService.getAllRaces();           
     }
 
-    get races(): ObservableArray<Race> {
+    get races(): Race[] {
         return this._races;
     }
 
@@ -56,13 +38,6 @@ export class RaceListComponent implements OnInit {
         return this._isLoading;
     }
 
-    /* ***********************************************************
-    * Use the "itemTap" event handler of the <RadListView> to navigate to the
-    * item details page. Retrieve a reference for the data item (the id) and pass it
-    * to the item details page, so that it can identify which data item to display.
-    * Learn more about navigating with a parameter in this documentation article:
-    * http://docs.nativescript.org/angular/core-concepts/angular-navigation.html#passing-parameter
-    *************************************************************/
     onCarItemTap(args: ListViewEventData): void {
         const tappedCarItem = args.view.bindingContext;
 

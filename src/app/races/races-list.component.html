@@ -1,7 +1,7 @@
 <ActionBar class="action-bar">
     <!-- Should remove the navigation button -->
     <NavigationButton ios:visibility="collapsed"></NavigationButton>
-    <Label class="action-bar-title" text="Browse" horizontalAlignment="center"></Label>
+    <Label class="action-bar-title" text="Raças Extraterrestres" horizontalAlignment="center"></Label>
 </ActionBar>
 
 <GridLayout class="page page-content">
@@ -14,40 +14,52 @@
     -->
         <ng-template tkListItemTemplate let-race="item">
             <StackLayout class="list-group-item">
-                <GridLayout rows="*, *, *" columns="*, *" class="list-group-item-content">
-                    <Label [text]="race.name" class="text-primary font-weight-bold"></Label>
-                    <Label col="1" horizontalAlignment="right" class="list-group-item-text m-r-5">
+                
+                <GridLayout rows="*, *, *" columns="*, *" class="list-group-item-content">                    
+                        <Label [text]="race.nome" style="color: #666" class="text-primary font-weight-bold"></Label>
+                    <!-- <Label col="1" horizontalAlignment="right" class="list-group-item-text m-r-5">
                         <FormattedString>
                             <Span text="&euro;"></Span>
                             <Span [text]="race.price"></Span>
                             <Span text="/day"></Span>
                         </FormattedString>
-                    </Label>
+                    </Label> -->
 
                     <StackLayout row="1" class="hr-light m-t-5 m-b-5" colSpan="2"></StackLayout>
 
-                    <Image row="2" [src]="race.imageUrl" stretch="aspectFill" height="120" class="m-r-20"></Image>
+                    <Image row="2" [src]="race.imageUrl"  height="120" class="m-r-20"></Image>
                     <StackLayout row="2" col="1" verticalAlignment="center" class="list-group-item-text">
                         <Label class="p-b-10">
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span text="&#xf1b9;   " class="fa text-primary"></Span>
-                                <Span [text]="race.class"></Span>
+                                <Span text="&#xf006;   " style="color:rgb(201, 201, 65)"  class="fa"></Span>
+                                <Span text="Origem: "></Span>
+                                <Span [text]="race.constelacao ? race.constelacao : 'N/A'"></Span>
                             </FormattedString>
                         </Label>
                         <Label class="p-b-10">
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span text="&#xf085;   " class="fa text-primary"></Span>
-                                <Span [text]="race.transmission"></Span>
-                                <Span text=" Transmission"></Span>
+                                <Span text="&#xf1da;   " style="color:rgb(99, 99, 95)" class="fa"></Span>
+                                <Span text="1º Visita: "></Span>
+                                <Span [text]="race.primeiraVisita ? race.primeiraVisita : 'N/A'"></Span>
+                               <!--  <Span text=" Transmission"></Span> -->
                             </FormattedString>
                         </Label>
+                        <!-- <Label class="p-b-10">                            
+                            <FormattedString ios:fontFamily="system">
+                                <Span text="&#xf124;   " class="fa text-primary"></Span>
+                                <Span [text]="race.seats"></Span>
+                            </FormattedString>
+                        </Label> -->
                         <Label>
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span text="&#xf2dc;   " class="fa text-primary"></Span>
-                                <Span [text]="race.hasAC ? 'Yes' : 'No'"></Span>
+                                <Span [text]="race.pacifica == true ? '&#xf118;   ' : (race.pacifica == false ? '&#xf119;   ' : '&#xf11a;   ')" 
+                                [ngStyle]="{color: race.pacifica == true ? '#1c7426' : (race.pacifica == false ? '#b70431' : '#ff7a00')}"
+                                class="fa"></Span> 
+                                <Span text="Pacífica: "></Span>
+                                <Span [text]="race.pacifica == true ? 'Sim' : (race.pacifica == false ? 'Não' : 'N/A')"></Span>
                             </FormattedString>
                         </Label>
                     </StackLayout>
@@ -55,6 +67,4 @@
             </StackLayout>
         </ng-template>
     </RadListView>
-
-    <ActivityIndicator [busy]="isLoading"></ActivityIndicator>
 </GridLayout>
