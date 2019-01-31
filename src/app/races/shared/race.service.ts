@@ -63,6 +63,78 @@ export class RaceService {
                 descricao: "Vêm da constelação Camelopardalis (Girafa). Desde o Século XIV ao princípio do Século XX (calendário humano) não lhes foi permitido sair do seu planeta, por outras raças extraterrestres. São uma raça muito violenta e predadora. Foram aliados da raça Maitre. Podem atingir 1,6 m (5'). A última vez que foram vistos na Terra foi em Agosto de 2001.", 
                 imageUrl: "~/app/images/mazarek.png",
                 pacifica: false
+            },{
+                id: 8,
+                nome: "AL-GRUALIX",
+                constelacao: "Baleia",
+                primeiraVisita: undefined,
+                descricao: "Vêm da constelação Cetus (Baleia) perto de Deneb Kaitos Shemali. Embora sejam muitas vezes confundidos com reptilianos não têm nada de comum, exceto a aparência. Têm uma altura de cerca de 2 metros (6') e podem viver até 350 anos. Esta é uma das 21 raças que constam como tendo mais de 2 sexos (gêneros). Esta raça tem 8 sexos distintos e todos podem reproduzir com contato sexual com qualquer das outras. O objetivo da sua visita à Terra é desconhecido. A última vez que foram detectados foi perto de Lima no Peru, em Dezembro de 2004.", 
+                imageUrl: "~/app/images/Al-Grualix.png",
+                pacifica: undefined
+            },{
+                id: 9,
+                nome: "OS MENSAGEIROS",
+                constelacao: undefined,
+                primeiraVisita: undefined,
+                descricao: "Provavelmente a mais enigmática das raças. Não se sabe muito sobre eles. Visitam a Terra com intervalos aproximados de 300 anos. A sua próxima visita pode agora acontecer em qualquer momento. Não se revelam, Não fazem contato direto com os humanos. Deixam gravuras nas rochas (desenhos e escrita) e símbolos nos monumentos históricos (por exemplo). As suas naves têm o formato de 'lágrima' e são prateados.", 
+                imageUrl: "~/app/images/osmensageiros.png",
+                pacifica: true
+            },{
+                id: 10,
+                nome: "RAMAY",
+                constelacao: "Cocheiro",
+                primeiraVisita: "Maias",
+                descricao: "Vêm de Capella, Constelação Auriga (Cocheiro). Uma raça muito pacífica. Eles tentaram coexistir  connosco. 'Criaram' a civilização Maia pegando em seres humanos de vários lugares do mundo e colocando-os na América do Sul. São uma raça de 'cientistas' ...ensinaram os Maias sobre astronomia e 'tempo'. Deixaram os Maias quando esta cultura estava no seu maior esplendor. Foi depois de deixarem os Maias que começaram os sacrifícios sangrentos em seu nome. Esta raça visitou-nos muitas vezes depois disso... Último avistamento: Bora-Bora em 2001. Sexo masculino vivem 130 anos. Sexo feminino vivem 26 anos.", 
+                imageUrl: "~/app/images/ramay.png",
+                pacifica: true
+            },{
+                id: 11,
+                nome: "MOONVIANTHAN-KAYPHIK",
+                constelacao: "Raposa",
+                primeiraVisita: undefined,
+                descricao: "Vêm da constelação Vulpecula (Raposa). Tiveram encontros com, pelo menos, 2 presidentes americanos e com muitos líderes de topo da União Soviética e Russos. Trocam alguma tecnologia com a contrapartida de poderem fazer abduções 'à vontade'. Não envolvem outras raças extraterrestres neste processo. Tiveram um grande papel na cultura Siberiana e Tibetana. Ainda têm bases nessas áreas, que estão escondidas na face norte das montanhas. Colonizaram mais de 40 planetas... por enquanto todos fora do nosso sistema solar!", 
+                imageUrl: "~/app/images/Moonvianthan-Kayphik.png",
+                pacifica: false
+            },{
+                id: 12,
+                nome: "RAK",
+                constelacao: undefined,
+                primeiraVisita: undefined,
+                descricao: "Visitaram a Terra menos vezes que as demais, apenas 5 vezes, sendo a ultima no ano 71 DC, gerando a crença nos gênios no Islamismo e no oriente médio ,mas deixaram de visitar este planeta por ser incompatível como sistema imunológico deles.", 
+                imageUrl: "~/app/images/rak.png",
+                pacifica: undefined
+            },{
+                id: 13,
+                nome: "OS INVÍSIVEIS",
+                constelacao: "Meseta",
+                primeiraVisita: undefined,
+                descricao: "Esta raça ficou conhecida por ser 'vista' em locais de alta segurança. São quase completamente invisíveis a olho nú. Tanto o exército russo como o americano, desenvolveram tecnologia que permite detectá-los no radar (as naves) , mas não os seres. Sabe-se três coisas : 1 . Deixam um cheiro ácido onde estiveram 2.Quando estão em janelas vê-se uma figura indistinta ( como um fantasma) , foram detectados em câmaras de segurança 3. Quando os cães começam a ladrar sem razão aparente é provável que se encontrem perto (eles ou os reptilianos). Vêm da constelação MENSA (Meseta). O seu objetivo é desconhecido.", 
+                imageUrl: "~/app/images/invisiveis.png",
+                pacifica: undefined
+            },{
+                id: 14,
+                nome: "ALLAMAHULUK-STRAT-163",
+                constelacao: "Júpiter",
+                primeiraVisita: undefined,
+                descricao: "Depois de perderem uma batalha contra os reptóides na índia antiga ( em data não identificada) foram forçados a abandonar o planeta que vinham visitando há uns 200 anos. Recomeçaram as visitas desde 1948. Tecnologicamente é uma raça muito avançada. As suas naves são frequentemente invisíveis ( ao radar e à vista humana ) e vestem um tipo de fato que também os torna invisíveis. Pensa-se que vêm de Júpiter ou de uma das suas luas. Último avistamento: Portugal, Maio 2005.", 
+                imageUrl: "~/app/images/163.png",
+                pacifica: undefined
+            },{
+                id: 15,
+                nome: "AL NANNA",
+                constelacao: "Gêmeos",
+                primeiraVisita: "1235 A.C",
+                descricao: "Os membros desta raça são a razão porque os humanos criaram o termo de Marcianos. Vêm da constelação Gemini (Gêmeos). Têm bases permanentes em Marte há milhares de anos onde recolhem um mineral parecido com o ouro. A primeira visita à Terra registada foi em 1235 A.C no Japão. Último avistamento: Madagáscar, 2003.", 
+                imageUrl: "~/app/images/allnanna.png",
+                pacifica: undefined
+            },{
+                id: 16,
+                nome: "INDUGUTK",
+                constelacao: undefined,
+                primeiraVisita: undefined,
+                descricao: "Esta raça tem várias bases na superficie e na Lua, onde extraem minério. (matéria desconhecida). Usam escravos para fazer a maior parte do trabalho... tratam muito bem estes 'escravos', e os Indugutk consideram-nos indíspensáveis. As suas operações na superficie e na Lua são muito secretas. Estão quase em permanente contacto com altas patentes dos governos Russo, Chinês e Americano! Têm a capacidade de mudarem de forma ('Shapeshift') quase perfeitamente ficando como seres humanos. Também são conhecidos como 'Men in Black' pois usam fatos escuros especiais (para proteger a sua pele) quando tomam a forma humana para executarem operações especiais na Terra.", 
+                imageUrl: "~/app/images/indugutk.png",
+                pacifica: undefined
             }
         ];
     }

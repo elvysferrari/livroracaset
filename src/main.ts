@@ -7,6 +7,5 @@ import { AppModule } from "./app/app.module";
 * for use. Check out the initialization script at /shared/kinvey.common.ts
 * along with more information about it.
 *************************************************************/
-import "./app/shared/kinvey.common";
 
 platformNativeScriptDynamic().bootstrapModule(AppModule);
