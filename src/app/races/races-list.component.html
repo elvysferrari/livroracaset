@@ -32,7 +32,7 @@
                         <Label class="p-b-10">
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span text="&#xf006;   " style="color:rgb(201, 201, 65)"  class="fa"></Span>
+                                <Span text="&#xf006; " style="color:rgb(201, 201, 65)"  class="fa"></Span>
                                 <Span text="Origem: "></Span>
                                 <Span [text]="race.constelacao ? race.constelacao : 'N/A'"></Span>
                             </FormattedString>
@@ -40,7 +40,7 @@
                         <Label class="p-b-10">
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span text="&#xf1da;   " style="color:rgb(99, 99, 95)" class="fa"></Span>
+                                <Span text="&#xf1da; " style="color:rgb(99, 99, 95)" class="fa"></Span>
                                 <Span text="1º Visita: "></Span>
                                 <Span [text]="race.primeiraVisita ? race.primeiraVisita : 'N/A'"></Span>
                                <!--  <Span text=" Transmission"></Span> -->
@@ -55,7 +55,7 @@
                         <Label>
                             <!-- set fontFamily="system" to workaround "Service exited due to Segmentation fault: 11" error -->
                             <FormattedString ios:fontFamily="system">
-                                <Span [text]="race.pacifica == true ? '&#xf118;   ' : (race.pacifica == false ? '&#xf119;   ' : '&#xf11a;   ')" 
+                                <Span [text]="race.pacifica == true ? '&#xf118; ' : (race.pacifica == false ? '&#xf119; ' : '&#xf11a; ')" 
                                 [ngStyle]="{color: race.pacifica == true ? '#1c7426' : (race.pacifica == false ? '#b70431' : '#ff7a00')}"
                                 class="fa"></Span> 
                                 <Span text="Pacífica: "></Span>
