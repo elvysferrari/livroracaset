@@ -200,7 +200,7 @@ export class RaceService {
                 imageUrl: "~/app/images/maitre.png",
                 pacifica: false
             },{
-                id: 24,
+                id: 25,
                 nome: "DRIES",
                 constelacao: "Cetus",
                 primeiraVisita: undefined,
@@ -208,7 +208,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Dries.png",
                 pacifica: false
             },{
-                id: 25,
+                id: 26,
                 nome: "LANG",
                 constelacao: "Cabeleira de Berenice",
                 primeiraVisita: undefined,
@@ -216,7 +216,7 @@ export class RaceService {
                 imageUrl: "~/app/images/lang.png",
                 pacifica: true
             },{
-                id: 26,
+                id: 27,
                 nome: "SMAD",
                 constelacao: "Batteray",
                 primeiraVisita: "2500 A. Atrás. ",
@@ -224,7 +224,7 @@ export class RaceService {
                 imageUrl: "~/app/images/smad.png",
                 pacifica: undefined
             },{
-                id: 27,
+                id: 28,
                 nome: "TENGRI TENGRI",
                 constelacao: "F1340",
                 primeiraVisita: "10.000 A. Atrás",
@@ -232,7 +232,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Tengri-Tengri.png",
                 pacifica: true
             },{
-                id: 28,
+                id: 29,
                 nome: "GRAYSLI",
                 constelacao: "Virgem",
                 primeiraVisita: "3.000 A. Atrás",
@@ -240,7 +240,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Graysli.png",
                 pacifica: true
             },{
-                id: 29,
+                id: 30,
                 nome: "ANUNNAKI",
                 constelacao: "Nibiru",
                 primeiraVisita: undefined,
@@ -248,15 +248,15 @@ export class RaceService {
                 imageUrl: "~/app/images/Anunnaki.png",
                 pacifica: undefined
             },{
-                id: 30,
+                id: 31,
                 nome: "AFIM",
                 constelacao: "Lyra",
                 primeiraVisita: undefined,
                 descricao: "Vêm da constelação de Lyra. Chamam-se a si próprios 'AFIM SPIANSTSY' por causa da guerra que lutaram contra uma raça chamada 'Spiantsy'... a raça 'Spiantsy' tinha 12 vezes mais membros e 35 vezes mais naves e recursos que os 'AFIM'... mas os 'AFIM' foi quem ganhou no final. Portanto juntaram o nome 'Spiantsy' ao nome da sua raça, como aviso para outras raças. São de estatura menor que a dos humanos, pele azul e às manchas, mais escuros no gênero masculino e mais claro no feminino. O seu planeta chama-se Crimea Ai Petri. Tecnologicamente são muito desenvolvidos. Conseguem vir do seu planeta para a Terra em 20 minutos. Não precisam de oxigênio. Eles têm uma atmosfera mais constituída predominantemente por uma mistura de hidrogênio e afins. Colonizaram 10 planetas de modo não violento. Quando estão perto dos humanos podem tornar-se invisíveis mas os humanos vão sentir uma certa dose de ansiedade inexplicável. As naves são pequenas e esféricas. Uma das razões porque nos visitam é para estudar o que chamam de 'desvio humano', para determinar o desenvolvimento futuro da raça humana.", 
-                imageUrl: "~/app/images/Afim-Spiantsy.png",
+                imageUrl: "~/app/images/Afim-Spianstsy.png",
                 pacifica: true
             },{
-                id: 31,
+                id: 32,
                 nome: "SOLIPSI RAI",
                 constelacao: "Cisne",
                 primeiraVisita: undefined,
@@ -264,7 +264,7 @@ export class RaceService {
                 imageUrl: "~/app/images/grays.png",
                 pacifica: true
             },{
-                id: 32,
+                id: 33,
                 nome: "PUXHITY",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -272,7 +272,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Puxhity.png",
                 pacifica: true
             },{
-                id: 33,
+                id: 34,
                 nome: "X5-TYKUT",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -280,7 +280,7 @@ export class RaceService {
                 imageUrl: "~/app/images/X5-Tykut.png",
                 pacifica: false
             },{
-                id: 34,
+                id: 35,
                 nome: "TANZANY",
                 constelacao: "Perseu",
                 primeiraVisita: undefined,
@@ -288,7 +288,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Tanzany.png",
                 pacifica: false
             },{
-                id: 35,
+                id: 36,
                 nome: "AIRK",
                 constelacao: "Ofiúco",
                 primeiraVisita: undefined,
@@ -296,7 +296,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Airk.png",
                 pacifica: true
             },{
-                id: 36,
+                id: 37,
                 nome: "VINNITUARY",
                 constelacao: "Pavão",
                 primeiraVisita: "1000 D.C",
@@ -304,7 +304,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Vinni-Tuary.png",
                 pacifica: true
             },{
-                id: 37,
+                id: 38,
                 nome: "KALENIA",
                 constelacao: "Águia",
                 primeiraVisita: "300 A.C",
@@ -312,7 +312,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Kalenia.png",
                 pacifica: true
             },{
-                id: 38,
+                id: 39,
                 nome: "STROM",
                 constelacao: "Ursa Menor",
                 primeiraVisita: "Idade do Gelo",
@@ -320,7 +320,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Strom.png",
                 pacifica: true
             },{
-                id: 39,
+                id: 40,
                 nome: "MYTHLAE",
                 constelacao: "Serpente",
                 primeiraVisita: "1963 D.C",
@@ -328,7 +328,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Mythilae.png",
                 pacifica: true
             },{
-                id: 40,
+                id: 41,
                 nome: "ALCOHBATA",
                 constelacao: "Perseu",
                 primeiraVisita: undefined,
@@ -336,7 +336,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Alcohbata.png",
                 pacifica: false
             },{
-                id: 41,
+                id: 42,
                 nome: "NEGUMAK",
                 constelacao: undefined,
                 primeiraVisita: "1989 D.C",
@@ -344,7 +344,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Negumak.png",
                 pacifica: false
             },{
-                id: 42,
+                id: 43,
                 nome: "ZETA RETICULAI",
                 constelacao: "Nets",
                 primeiraVisita: "4000 A.C",
@@ -352,7 +352,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Zeta-Reticulai.png",
                 pacifica: undefined
             },{
-                id: 43,
+                id: 44,
                 nome: "TARICE",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -360,7 +360,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Tarice.png",
                 pacifica: undefined
             },{
-                id: 44,
+                id: 45,
                 nome: "PURITAV-ILLUMU",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -368,7 +368,7 @@ export class RaceService {
                 imageUrl: "~/app/images/puritav-illumu.png",
                 pacifica: true
             },{
-                id: 45,
+                id: 46,
                 nome: "X-1Z",
                 constelacao: undefined,
                 primeiraVisita: "Séc. XVI",
@@ -376,7 +376,7 @@ export class RaceService {
                 imageUrl: "~/app/images/x-1z.png",
                 pacifica: false
             },{
-                id: 46,
+                id: 47,
                 nome: "CARAVELDI",
                 constelacao: "Camaleão",
                 primeiraVisita: undefined,
@@ -384,7 +384,7 @@ export class RaceService {
                 imageUrl: "~/app/images/caraveldi.png",
                 pacifica: false
             },{
-                id: 47,
+                id: 48,
                 nome: "ELFFAF",
                 constelacao: "Boieiro",
                 primeiraVisita: undefined,
@@ -392,7 +392,7 @@ export class RaceService {
                 imageUrl: "~/app/images/elffaf.png",
                 pacifica: true
             },{
-                id: 48,
+                id: 49,
                 nome: "MATRAX",
                 constelacao: "Delfim",
                 primeiraVisita: "4.000 A. Atrás",
@@ -400,7 +400,7 @@ export class RaceService {
                 imageUrl: "~/app/images/matrax.png",
                 pacifica: true
             },{
-                id: 49,
+                id: 50,
                 nome: "TISAR-3",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -408,7 +408,7 @@ export class RaceService {
                 imageUrl: "~/app/images/tisar-3.png",
                 pacifica: undefined
             },{
-                id: 50,
+                id: 51,
                 nome: "ELLINA",
                 constelacao: undefined,
                 primeiraVisita: undefined,
@@ -416,7 +416,7 @@ export class RaceService {
                 imageUrl: "~/app/images/ellina.png",
                 pacifica: undefined
             },{
-                id: 51,
+                id: 52,
                 nome: "KILLIMAT-ARR",
                 constelacao: "Cruzeiro do Sul",
                 primeiraVisita: undefined,
@@ -424,7 +424,7 @@ export class RaceService {
                 imageUrl: "~/app/images/Killimat-Arr.png",
                 pacifica: undefined
             },{
-                id: 51,
+                id: 53,
                 nome: "REPTILIANOS",
                 constelacao: "Dragão",
                 primeiraVisita: "15.000 A. Atrás",
