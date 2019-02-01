@@ -9,16 +9,9 @@
         <ng-template tkListItemTemplate let-race="item">
             <StackLayout  class="list-group-item">
                 
-                <GridLayout rows="*, *, *" columns="*, *" class="list-group-item-content">                    
-                        <Label [text]="race.nome" style="color: #666" class="text-primary font-weight-bold"></Label>
-                    <!-- <Label col="1" horizontalAlignment="right" class="list-group-item-text m-r-5">
-                        <FormattedString>
-                            <Span text="&euro;"></Span>
-                            <Span [text]="race.price"></Span>
-                            <Span text="/day"></Span>
-                        </FormattedString>
-                    </Label> -->
-
+                <GridLayout rows="*, *, *, *" columns="*, *" class="list-group-item-content">                    
+                    <Label [text]="race.nome" style="color: #666" class="text-primary font-weight-bold"></Label>
+                    
                     <StackLayout row="1" class="hr-light m-t-5 m-b-5" colSpan="2"></StackLayout>
 
                     <Image row="2" [src]="race.imageUrl"  height="120" class="m-r-20"></Image>
@@ -55,9 +48,10 @@
                                 <Span text="Pacífica: "></Span>
                                 <Span [text]="race.pacifica == true ? 'Sim' : (race.pacifica == false ? 'Não' : 'N/A')"></Span>
                             </FormattedString>
-                        </Label>
+                        </Label>                    
                         
                     </StackLayout>
+                    <Label *ngIf='race.id == 53' height="40" row="3"></Label>
                     
                 </GridLayout>
                 

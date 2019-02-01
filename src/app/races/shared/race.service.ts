@@ -351,7 +351,7 @@ export class RaceService {
                 descricao: "Muitas vezes confundidos (devido à aparência) com as raças Maitre e Solipsi Rai (ou 'Grays'). Vêm da constelação Nets. São aliados dos Anunnaki e cooperam com eles em diferentes planetas... São os representantes dos Anunnaki na Terra e mandam-lhes informação sobre os Humanos e este planeta pelo menos 25 vezes por ano. Os Anunnaki fizeram engenharia genética numa subespécie dos Zeta para que eles ficassem com uma aparência mais próxima da humana, mas deixando suficientes diferenças físicas para os Humanos os distinguirem. Mais tarde tornaram-se alguns Faraós do Egito. O mais conhecido de todos foi AKHENATON a quem os reptilianos tomaram o poder... infiltraram-se na Corte como Sacerdotes do Templo. Os primeiros relatos sobre os ZETAS datam de 4000 A.C, mas é bem plausível que o número seja maior. Foram os primeiros híbridos criados por engenharia genética pelos Anunnaki. A subespécie Zeta ainda existe na Terra e ainda (pelo menos 30%) apresenta as mesmas diferenças físicas com as quais foram criados. Ainda hoje, cerca de 30% deles têm malformações. Existem aqui ainda em duas formas... a original e a híbrida. A sua localização na Terra é desconhecida.", 
                 imageUrl: "~/app/images/Zeta-Reticulai.png",
                 pacifica: undefined
-            },{
+            }, {
                 id: 44,
                 nome: "TARICE",
                 constelacao: undefined,
@@ -433,6 +433,7 @@ export class RaceService {
                 pacifica: false
             }
         ];
+        
     }
 
     getRaceById(id: number): Race{
