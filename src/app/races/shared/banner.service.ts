@@ -18,7 +18,7 @@ export class BannerService {
         return this.bannerHomeCreated.asObservable();
     }
     createBanner() {
-        const testing = true;
+        const testing = false;
         
         createBanner({
             // if this 'view' property is not set, the banner is overlayed on the current top most view
@@ -35,7 +35,7 @@ export class BannerService {
                 // top: 10
                 bottom: isIOS ? 50 : 0
             },
-            keywords: ["foo", "bar"]
+            keywords: ["extraterrestrial", "extraterrestre", "et", "ufo", "planet", "planetas", "raças", "50 raças"]
         }).then(
             () => {
                 
