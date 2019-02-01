@@ -5,15 +5,9 @@
 </ActionBar>
 
 <GridLayout class="page page-content">
-    <RadListView [items]="races" (itemTap)="onCarItemTap($event)" class="list-group">
-    <!--
-    RadListView is a UI component part of the Progress NativeScript UI set of components.
-    Learn more about the RadListView UI component and how it can be customized in this documentation article:
-    http://docs.telerik.com/devtools/nativescript-ui/Controls/Angular/ListView/getting-started
-    This component is used to display the master list in the master-detail structure.
-    -->
+    <RadListView  #rad [items]="races" (itemTap)="onRaceItemTap($event)" class="list-group">
         <ng-template tkListItemTemplate let-race="item">
-            <StackLayout class="list-group-item">
+            <StackLayout  class="list-group-item">
                 
                 <GridLayout rows="*, *, *" columns="*, *" class="list-group-item-content">                    
                         <Label [text]="race.nome" style="color: #666" class="text-primary font-weight-bold"></Label>
@@ -62,9 +56,15 @@
                                 <Span [text]="race.pacifica == true ? 'Sim' : (race.pacifica == false ? 'Não' : 'N/A')"></Span>
                             </FormattedString>
                         </Label>
+                        
                     </StackLayout>
+                    
                 </GridLayout>
+                
             </StackLayout>
+            
         </ng-template>
+        
     </RadListView>
+    <!--  -->
 </GridLayout>

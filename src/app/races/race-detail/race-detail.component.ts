@@ -1,17 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 import { PageRoute, RouterExtensions } from "nativescript-angular/router";
-import { switchMap } from "rxjs/operators";
+import { switchMap, timestamp } from "rxjs/operators";
 
 import { Race } from "../shared/race.model";
 import { RaceService } from "../shared/race.service";
+import { BannerService } from "../shared/banner.service";
 
-
-
-/* ***********************************************************
-* This is the item details component in the master-detail structure.
-* This component retrieves the passed parameter from the master list component,
-* finds the data item by this parameter and displays the detailed data item information.
-*************************************************************/
 @Component({
     selector: "RaceDetail",
     moduleId: module.id,
@@ -23,25 +17,34 @@ export class RaceDetailComponent implements OnInit {
     constructor(
         private _raceService: RaceService,
         private _pageRoute: PageRoute,
-        private _routerExtensions: RouterExtensions
+        private _routerExtensions: RouterExtensions,
+        private _bannerService: BannerService
     ) { }
 
     ngOnInit(): void {
-
+        
         this._pageRoute.activatedRoute
             .pipe(switchMap((activatedRoute) => activatedRoute.params))
             .forEach((params) => {
                 const raceId = params.id;
                 this._race = this._raceService.getRaceById(raceId);
+                setTimeout(() => {
+                    this._bannerService.createBanner();
+                }, 1000)
             });
     }
-
+    
     get race(): Race {
         return this._race;
     }
 
     onBackButtonTap(): void {
+        
         this._routerExtensions.backToPreviousPage();
+        setTimeout(() => {
+            this._bannerService.createBanner();
+        }, 1000)
+        
     }
 
 }

@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { BannerService } from './races/shared/banner.service';
 
 @NgModule({
     bootstrap: [
@@ -17,7 +18,8 @@ import { AppComponent } from "./app.component";
         AppComponent
     ],
     providers: [
-        RaceService
+        RaceService,
+        BannerService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

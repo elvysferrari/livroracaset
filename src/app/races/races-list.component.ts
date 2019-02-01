@@ -1,16 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, SimpleChanges, ViewChild } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
-import { ListViewEventData } from "nativescript-ui-listview";
-import { ObservableArray } from "tns-core-modules/data/observable-array";
+import { ListViewEventData, RadListView } from "nativescript-ui-listview";
 
 import { Race } from "./shared/race.model";
 import { RaceService } from "./shared/race.service";
+import { BannerService } from "./shared/banner.service";
 
-/* ***********************************************************
-* This is the master list component in the master-detail structure.
-* This component gets the data, passes it to the master view and displays it in a list.
-* It also handles the navigation to the details page for each item.
-*************************************************************/
 @Component({
     selector: "RacesList",
     moduleId: module.id,
@@ -20,14 +15,19 @@ import { RaceService } from "./shared/race.service";
 export class RaceListComponent implements OnInit {
     private _isLoading: boolean = false;
     private _races: Race[] = [];
-
+  
     constructor(
         private _raceService: RaceService,
-        private _routerExtensions: RouterExtensions
+        private _routerExtensions: RouterExtensions,
+        private _bannerService: BannerService
     ) { }
 
     ngOnInit(): void {
-        this._races = this._raceService.getAllRaces();           
+        this._races = this._raceService.getAllRaces(); 
+        setTimeout(() => {
+            this._bannerService.createBanner();         
+        }, 1000)
+
     }
 
     get races(): Race[] {
@@ -37,11 +37,11 @@ export class RaceListComponent implements OnInit {
     get isLoading(): boolean {
         return this._isLoading;
     }
+    
+    onRaceItemTap(args: ListViewEventData): void {
+        const tappedRaceItem = args.view.bindingContext;
 
-    onCarItemTap(args: ListViewEventData): void {
-        const tappedCarItem = args.view.bindingContext;
-
-        this._routerExtensions.navigate(["/races/race-detail", tappedCarItem.id],
+        this._routerExtensions.navigate(["/races/race-detail", tappedRaceItem.id],
         {
             animated: true,
             transition: {
